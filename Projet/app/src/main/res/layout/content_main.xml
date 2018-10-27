@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:id="@+id/ED_Nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="428dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/NOM"
+        android:inputType="textCapCharacters"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_date" />
+
+    <EditText
+        android:id="@+id/ED_Prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="380dp"
+        android:ems="10"
+        android:hint="@string/Prenom"
+        android:inputType="textCapWords"
+        android:textAllCaps="true"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ED_Nom"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TV_Mail"
+        android:layout_width="227dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="98dp"
+        android:text="@string/mail"
+        android:textColor="@color/colorText"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ED_Prenom" />
+
+    <RadioGroup
+        android:id="@+id/RG_Sexe"
+        android:layout_width="124dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/CB_C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Mail">
+
+        <RadioButton
+            android:id="@+id/RB_H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/H"
+            android:textColor="@color/colorText" />
+
+        <RadioButton
+            android:id="@+id/RB_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/F"
+            android:textColor="@color/colorText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TV_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="476dp"
+        android:textColor="@color/colorText"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="397dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ED_Prenom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/photomax" />
+
+    <CheckBox
+        android:id="@+id/CB_C"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/Langage1"
+        app:layout_constraintEnd_toStartOf="@+id/CB_Cpp"
+        app:layout_constraintStart_toEndOf="@+id/RG_Sexe"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Mail" />
+
+    <CheckBox
+        android:id="@+id/CB_Cpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/Langage2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CB_C"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Mail" />
+
+    <CheckBox
+        android:id="@+id/CB_Java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/Langage3"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/RG_Sexe"
+        app:layout_constraintTop_toBottomOf="@+id/CB_C" />
+
+    <CheckBox
+        android:id="@+id/CB_Delphi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/Langage4"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toEndOf="@+id/CB_Java"
+        app:layout_constraintTop_toBottomOf="@+id/CB_Cpp" />
+
+    <TextView
+        android:id="@+id/TV_Sexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/ChoixSexe"
+        app:layout_constraintBottom_toTopOf="@+id/RG_Sexe"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Mail" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/LangageListe"
+        app:layout_constraintBottom_toTopOf="@+id/CB_C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TV_Sexe"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/ED_Heure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="@string/NbrHeure"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/BT_RAZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CB_Java" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/TextHeure"
+        app:layout_constraintBottom_toTopOf="@+id/ED_Heure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BT_RAZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/BtRAZ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/BT_Valide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ED_Heure" />
+
+    <Button
+        android:id="@+id/BT_Valide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/BtValide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BT_RAZ"
+        app:layout_constraintTop_toBottomOf="@+id/ED_Heure" />
+
+</android.support.constraint.ConstraintLayout>

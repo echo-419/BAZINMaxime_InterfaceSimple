@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Une Application Inespérée</string>
+    <string name="action_settings">Settings</string>
+    <string name="ConsoleMsg">___ATTENTION___</string>
+    <string name="NOM">NOM</string>
+    <string name="Prenom">Prénom</string>
+    <string name="mail">Générer un Mail</string>
+
+    <string name="ChoixSexe">Sexe:</string>
+    <string name="H">Homme</string>
+    <string name="F">Femme</string>
+
+    <string name="LangageListe">Langage connu: </string>
+    <string name="Langage1">C</string>
+    <string name="Langage2">C++</string>
+    <string name="Langage3">Java</string>
+    <string name="Langage4">Delphi</string>*
+
+    <string name="TextHeure">Nombre d`heures moyen de jeu par semaine :</string>
+    <string name="NbrHeure">0</string>
+
+    <string name="BtRAZ">Reset</string>
+    <string name="BtValide">Validé</string>
+
+</resources>
